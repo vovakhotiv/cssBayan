@@ -1,0 +1,33 @@
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #F6F6EC;
+}
+
+.container {
+  width: 500px;
+  margin: 50px auto;
+}
+
+img {
+  width: 500px;
+}

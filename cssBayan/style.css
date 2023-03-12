@@ -13,21 +13,43 @@ li {
   list-style-type: none;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 body {
   font-family: Helvetica, sans-serif;
   background-color: #F6F6EC;
 }
 
 .container {
-  width: 500px;
+  width: 600px;
   margin: 50px auto;
 }
 
+.headline {
+  margin-bottom: 20px;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.accordion-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-list-item {
+  padding: 20px 0px;
+  border-top: 2px solid rgba(211, 211, 211, 0.8);
+}
+
+.link {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 700;
+  color: #0055D8;
+}
+
 img {
+  display: none;
   width: 500px;
 }

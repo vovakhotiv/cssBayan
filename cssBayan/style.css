@@ -57,12 +57,14 @@ body {
   transition: 0.8s;
 }
 
-.accordion:hover .accordion-text {
-  color: #000000;
-}
+@media screen and (min-width: 1440px) {
+  .accordion:hover .accordion-text {
+    color: #000000;
+  }
 
-.accordion-item:hover .accordion-img {
-  max-height: 35vh;
+  .accordion-item:hover .accordion-img {
+    max-height: 35vh;
+  }
 }
 
 input[type="radio"] {
@@ -122,10 +124,6 @@ input[type="radio"] ~ label:active > .accordion-content > .accordion-text {
 
   .accordion-icon {
     width: 3vw;
-  }
-
-  .accordion-item:hover .accordion-img {
-    max-height: 30vh;
   }
 
   input[type="radio"]:checked ~ .mem-label .accordion-img {

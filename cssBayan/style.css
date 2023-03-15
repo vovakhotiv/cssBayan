@@ -29,7 +29,7 @@ body {
 .accordion-item {
   padding: 1vh 0;
   font-size: 1.5625em;
-  border-top: 2px solid rgba(211, 211, 211, 0.8);
+  border-top: 0.4vh solid rgba(211, 211, 211, 0.8);
 }
 
 .mem-label {

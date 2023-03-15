@@ -1,0 +1,132 @@
+h1,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  background-color: #F6F6EC;
+}
+
+.container {
+  overflow: hidden;
+  width: 30vw;
+  margin: 7vh auto;
+}
+
+.headline {
+  margin-bottom: 2vh;
+  font-size: 2.5em;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.accordion-item {
+  padding: 1vh 0;
+  font-size: 1.5625em;
+  border-top: 0.4vh solid rgba(211, 211, 211, 0.8);
+}
+
+.mem-label {
+  cursor: pointer;
+}
+
+.accordion-text {
+  margin-bottom: 2vh;
+  color: #0055D8;
+}
+
+.accordion-icon {
+  display: inline-block;
+  width: 2vw;
+  height: 2vh;
+  background-image: url(./assets/arrow.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.accordion-img {
+  max-height: 0vh;
+  overflow: hidden;
+  transition: 0.8s;
+}
+
+@media screen and (min-width: 1440px) {
+  .accordion:hover .accordion-text {
+    color: #000000;
+  }
+
+  .accordion-item:hover .accordion-img {
+    max-height: 35vh;
+  }
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked ~ .mem-label .accordion-img {
+  max-height: 35vh;
+  transition: 0.8s;
+}
+
+input[type="radio"]:checked ~ .mem-label .accordion-text > .accordion-icon {
+  transform: rotate(180deg);
+  transition: 0.8s;
+}
+
+input[type="radio"]:checked ~ .mem-label .accordion-text {
+  color: #000000;
+  transition: 0.5s;
+}
+
+label:active > .accordion-content {
+  opacity: 0.6;
+}
+
+input[type="radio"] ~ label:active > .accordion-content > .accordion-text {
+  color: #0055D8;
+}
+
+@media screen and (max-width: 1439px) {
+  .container {
+    width: 40vw;
+  }
+
+  .headline {
+    font-size: 2.1875em;
+  }
+
+  .accordion-item {
+    font-size: 1.375em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 70vw;
+    margin: 5vh auto;
+  }
+
+  .headline {
+    font-size: 1.875em;
+  }
+
+  .accordion-item {
+    font-size: 1.125em;
+  }
+
+  .accordion-icon {
+    width: 3vw;
+  }
+
+  input[type="radio"]:checked ~ .mem-label .accordion-img {
+    max-height: 30vh;
+  }
+}

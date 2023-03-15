@@ -84,6 +84,14 @@ input[type="radio"]:checked ~ .mem-label .accordion-text {
   transition: 0.5s;
 }
 
+label:active > .accordion-content {
+  opacity: 0.6;
+}
+
+input[type="radio"] ~ label:active > .accordion-content > .accordion-text {
+  color: #0055D8;
+}
+
 @media screen and (max-width: 1439px) {
   .container {
     width: 40vw;
